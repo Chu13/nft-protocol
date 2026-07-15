@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sync-exports": "cp ../exports/*.json exports/"
   },
   "dependencies": {
     "@rainbow-me/rainbowkit": "^2.2.11",

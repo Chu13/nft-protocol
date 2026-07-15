@@ -2,7 +2,7 @@
 
 > Level 03 of a 3-project DeFi portfolio ecosystem — mint, list, and collect a 100-piece generative NFT gallery, paid entirely in CHU (Level 02's token). Signed by Chu. Paid in CHU.
 
-**Live demo**: _pending Vercel deploy_
+**Live demo**: https://nft-protocol-obra.vercel.app (BNB Chain Testnet — connect a wallet on that network to mint/list/buy)
 **Contracts**: verified live on BNB Chain Testnet — see [Deployed contracts](#deployed-contracts) below.
 
 ## What is this
@@ -67,8 +67,10 @@ Both contracts were deployed and administered entirely from a browser wallet (Me
 /contracts — Obra + ObraMarket contracts, tests, deploy/seed/merkle/pin scripts, the art generator
 /app       — mint page, marketplace, collector profile
 /brand     — visual identity system (BRAND.md, logo/favicon/OG assets, palette.json)
-/exports   — token/Obra/ObraMarket ABI + per-network addresses (single source of truth for the frontend)
+/exports   — token/Obra/ObraMarket ABI + per-network addresses (source of truth)
 ```
+
+`app/exports/` is a synced copy of the root `/exports/` (Vercel's CLI deploy only uploads the `app/` subtree, which can't reach a sibling directory). After redeploying contracts, run `npm run sync-exports` from `/app` before redeploying the frontend.
 
 ## Running the tests
 

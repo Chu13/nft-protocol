@@ -1,10 +1,10 @@
-import allowlistExport from "../../exports/allowlist.json";
+import allowlistExport from "../exports/allowlist.json";
 
 /**
  * Client-side Merkle-proof lookup for the Allowlist mint phase. No backend —
- * the proof set is generated once (contracts/scripts/merkle.ts) and
- * committed to /exports/allowlist.json alongside the contract exports; the
- * frontend just looks up the connected wallet's proof by address.
+ * the proof set is generated once (contracts/scripts/merkle.ts) and synced
+ * to app/exports/allowlist.json (see the note in lib/config/contracts.ts);
+ * the frontend just looks up the connected wallet's proof by address.
  *
  * A wallet not present in `addresses` is simply not allowlisted for this
  * phase — `getAllowlistProof` returning `undefined` is the normal "not on
