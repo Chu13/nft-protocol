@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" width="300" height="80" role="img" aria-label="OBRA">
+  <!--
+    OBRA primary logo lockup — seal (the artist's chop) + wordmark.
+    Designed for dark surfaces (bg #000d06 / surface #011c11 / surface-high #0a2b1e).
+    Seal: vermilion rounded-square (#f5642b) enclosing a bg-colored (#000d06) continuous
+    stroke that abstracts an "O" with a signature-flourish tail — same path data as
+    /brand/assets/seal.svg. Wordmark: ink white (#e9faf2), Fraunces 600.
+    NOTE: wordmark uses live <text> with a font-family reference, not outlined paths — the
+    consuming app must load Fraunces (Google Fonts, variable) for the text to render as
+    intended. If Fraunces is unavailable it falls back to a system serif; the seal itself needs
+    no font and always renders correctly.
+  -->
+  <g transform="translate(6,6) scale(0.68)">
+    <rect x="8" y="8" width="84" height="84" rx="14" fill="#f5642b"/>
+    <path
+      d="M 62.55 57.22 A 19 19 0 1 1 66.93 46.66 C 76 52 82 62 78 72 C 75.5 78 68 80 62 76"
+      fill="none"
+      stroke="#000d06"
+      stroke-width="7"
+      stroke-linecap="round"
+      stroke-linejoin="round"/>
+  </g>
+  <text
+    x="90" y="53"
+    font-family="'Fraunces', Georgia, 'Times New Roman', serif"
+    font-size="42"
+    font-weight="600"
+    letter-spacing="0.5"
+    fill="#e9faf2">OBRA</text>
+</svg>

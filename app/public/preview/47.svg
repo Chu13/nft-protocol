@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img" aria-label="OBRA #47 — Trazo, Sala Verde">
+  <defs>
+    <clipPath id="frame-clip-47"><rect x="46" y="46" width="408" height="408" rx="2"/></clipPath>
+    <filter id="grain-47"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="47" result="noise"/><feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.5 0"/></filter>
+  </defs>
+  <rect x="0" y="0" width="500" height="500" fill="#000d06"/>
+  <rect x="28" y="28" width="444" height="444" rx="6" fill="#011c11"/>
+  <g clip-path="url(#frame-clip-47)">
+    <path d="M 107.2 377.2 C 213.5 448.6, 300.0 500.1, 337.7 454.0 C 361.7 533.1, 398.3 545.1, 434.9 454.0" fill="none" stroke="#57bc80" stroke-width="2.8" stroke-linecap="round" opacity="0.97"/><path d="M 95.2 88.2 C 206.1 33.4, 282.6 -5.8, 299.5 48.4 C 375.4 29.6, 453.7 94.5, 454.0 106.9 C 575.2 141.6, 605.3 208.1, 454.0 255.8" fill="none" stroke="#438c60" stroke-width="4.0" stroke-linecap="round" opacity="0.91"/><path d="M 78.3 64.7 C 188.9 86.1, 245.3 29.6, 285.2 46.0 C 309.5 78.9, 348.9 48.0, 383.7 46.0 C 504.8 19.0, 595.6 20.1, 454.0 46.0" fill="none" stroke="#e9faf2" stroke-width="4.2" stroke-linecap="round" opacity="0.79"/><path d="M 64.7 307.2 C 104.0 346.1, 223.1 366.8, 240.9 388.2 C 302.2 380.5, 353.1 343.6, 389.3 326.3 C 434.7 385.6, 541.4 385.3, 454.0 418.6 C 546.7 357.2, 571.6 404.0, 454.0 452.0" fill="none" stroke="#57bc80" stroke-width="2.0" stroke-linecap="round" opacity="0.84"/><path d="M 47.1 302.6 C 129.4 350.6, 149.5 423.2, 183.0 422.4 C 294.8 399.0, 412.3 323.7, 423.3 320.3 C 456.0 380.2, 535.4 448.2, 454.0 454.0" fill="none" stroke="#438c60" stroke-width="3.3" stroke-linecap="round" opacity="0.83"/><path d="M 80.8 421.6 C 157.9 402.2, 218.4 413.5, 253.9 378.4 C 302.1 350.4, 343.4 364.3, 362.4 383.2 C 394.1 338.4, 466.8 385.9, 454.0 373.1" fill="none" stroke="#e9faf2" stroke-width="4.1" stroke-linecap="round" opacity="0.92"/><path d="M 109.8 405.3 C 172.7 431.1, 232.9 489.8, 266.2 454.0 C 305.0 485.3, 360.7 496.4, 398.1 454.0 C 496.3 379.6, 585.9 428.3, 454.0 419.8" fill="none" stroke="#57bc80" stroke-width="4.4" stroke-linecap="round" opacity="0.91"/>
+    <rect x="46" y="46" width="408" height="408" fill="#e9faf2" filter="url(#grain-47)" opacity="0.15"/>
+  </g>
+  <rect x="46" y="46" width="408" height="408" fill="none" stroke="#203c30" stroke-width="2"/>
+  <g transform="translate(392,392) scale(0.7600)"><rect x="8" y="8" width="84" height="84" rx="14" fill="#ddb049"/><path d="M 62.55 57.22 A 19 19 0 1 1 66.93 46.66 C 76 52 82 62 78 72 C 75.5 78 68 80 62 76" fill="none" stroke="#000d06" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

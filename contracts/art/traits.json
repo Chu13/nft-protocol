@@ -1,0 +1,46 @@
+[
+  {
+    "trait_type": "Composición",
+    "values": [
+      { "value": "Orbital", "weight": 30 },
+      { "value": "Constructiva", "weight": 25 },
+      { "value": "Retícula", "weight": 20 },
+      { "value": "Trazo", "weight": 20 },
+      { "value": "Guilloché", "weight": 5 }
+    ]
+  },
+  {
+    "trait_type": "Paleta",
+    "values": [
+      { "value": "Sala Verde", "weight": 45 },
+      { "value": "Vermellón", "weight": 30 },
+      { "value": "Hueso y Tinta", "weight": 20 },
+      { "value": "Dorada", "weight": 4 },
+      { "value": "Espectro", "weight": 1 }
+    ]
+  },
+  {
+    "trait_type": "Densidad",
+    "values": [
+      { "value": "Mínima", "weight": 20 },
+      { "value": "Equilibrada", "weight": 50 },
+      { "value": "Densa", "weight": 30 }
+    ]
+  },
+  {
+    "trait_type": "Acabado",
+    "values": [
+      { "value": "Plano", "weight": 45 },
+      { "value": "Grabado", "weight": 30 },
+      { "value": "Grano", "weight": 25 }
+    ]
+  },
+  {
+    "trait_type": "Sello",
+    "values": [
+      { "value": "Vermilion", "weight": 90 },
+      { "value": "Gold", "weight": 9 },
+      { "value": "Double", "weight": 1 }
+    ]
+  }
+]

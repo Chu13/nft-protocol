@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" role="img" aria-label="OBRA — Mint, list, collect, all in CHU">
+  <!--
+    OBRA social share / OG card. Static SVG (1200x630, the standard OG card ratio) — a build
+    step can rasterize this to PNG later for platforms that don't render SVG previews; nothing
+    here depends on that happening first.
+    Layout deliberately echoes the collection's own "gallery plate" motif (mat + thin frame)
+    from generate.ts, so the share card reads as a family member of the NFTs themselves rather
+    than a generic marketing banner.
+    Uses the brand line (storytelling context, not in-app chrome) per BRAND.md §1: "Signed by
+    Chu. Paid in CHU."
+    NOTE: live <text> referencing Fraunces / Instrument Sans / Fragment Mono — same
+    font-loading caveat as logo.svg. Falls back to system serif/sans-serif/monospace if those
+    aren't available wherever this gets rasterized.
+  -->
+  <rect x="0" y="0" width="1200" height="630" fill="#000d06"/>
+  <rect x="40" y="40" width="1120" height="550" rx="8" fill="#011c11"/>
+  <rect x="64" y="64" width="1072" height="502" fill="none" stroke="#203c30" stroke-width="2"/>
+
+  <!-- seal -->
+  <g transform="translate(120,185) scale(2.6)">
+    <rect x="8" y="8" width="84" height="84" rx="14" fill="#f5642b"/>
+    <path
+      d="M 62.55 57.22 A 19 19 0 1 1 66.93 46.66 C 76 52 82 62 78 72 C 75.5 78 68 80 62 76"
+      fill="none"
+      stroke="#000d06"
+      stroke-width="7"
+      stroke-linecap="round"
+      stroke-linejoin="round"/>
+  </g>
+
+  <!-- wordmark + tagline -->
+  <text x="430" y="345" font-family="'Fraunces', Georgia, 'Times New Roman', serif" font-weight="600" font-size="148" letter-spacing="1" fill="#e9faf2">OBRA</text>
+  <text x="432" y="400" font-family="'Instrument Sans', -apple-system, 'Segoe UI', sans-serif" font-size="26" fill="#97b2a5">Signed by Chu. Paid in CHU.</text>
+
+  <!-- placard chrome -->
+  <text x="90" y="555" font-family="'Fragment Mono', ui-monospace, 'SFMono-Regular', monospace" font-size="15" letter-spacing="0.08em" fill="#97b2a5">LEVEL 03 OF THE CHU ECOSYSTEM</text>
+  <text x="1110" y="555" text-anchor="end" font-family="'Fragment Mono', ui-monospace, 'SFMono-Regular', monospace" font-size="15" letter-spacing="0.08em" fill="#97b2a5">ETHEREUM · BNB CHAIN</text>
+</svg>

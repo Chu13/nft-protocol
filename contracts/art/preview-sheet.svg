@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1430" width="1200" height="1430" role="img" aria-label="OBRA collection preview — 9 representative pieces">
+  <rect x="0" y="0" width="1200" height="1430" fill="#000d06"/>
+  <text x="30" y="56" font-family="'Fraunces', Georgia, serif" font-weight="600" font-size="34" fill="#e9faf2">OBRA — Collection Preview</text>
+  <text x="30" y="84" font-family="'Instrument Sans', -apple-system, sans-serif" font-size="15" fill="#97b2a5">9 representative pieces — see preview.md for selection rationale</text>
+<g transform="translate(30,110)">
+  <g transform="scale(0.7200)">
+  <defs>
+    <clipPath id="frame-clip-1"><rect x="46" y="46" width="408" height="408" rx="2"/></clipPath>
+    <filter id="grain-1"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="1" result="noise"/><feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.5 0"/></filter>
+  </defs>
+  <rect x="0" y="0" width="500" height="500" fill="#000d06"/>
+  <rect x="28" y="28" width="444" height="444" rx="6" fill="#011c11"/>
+  <g clip-path="url(#frame-clip-1)">
+    <rect x="274.2" y="93.5" width="160.2" height="25.2" fill="#ded6c9" opacity="0.98" transform="rotate(-30 354.2 106.1)"/><rect x="121.2" y="221.9" width="202.5" height="15.8" fill="#e9faf2" opacity="0.96" transform="rotate(0 222.5 229.8)"/><rect x="115.8" y="406.9" width="177.4" height="26.5" fill="#97b2a5" opacity="0.71" transform="rotate(45 204.5 420.1)"/><rect x="34.8" y="249.1" width="317.6" height="13.6" fill="#ded6c9" opacity="0.92" transform="rotate(45 193.6 255.9)"/><rect x="143.4" y="119.3" width="199.3" height="15.4" fill="#e9faf2" opacity="0.93" transform="rotate(-30 243.1 127.0)"/><rect x="157.3" y="63.4" width="251.0" height="24.2" fill="#97b2a5" opacity="0.84" transform="rotate(0 282.8 75.5)"/><rect x="26.3" y="147.7" width="242.8" height="18.1" fill="#ded6c9" opacity="0.84" transform="rotate(-30 147.7 156.7)"/><rect x="38.6" y="299.7" width="299.4" height="19.0" fill="#e9faf2" opacity="0.88" transform="rotate(30 188.3 309.2)"/>
+    <rect x="46" y="46" width="408" height="408" fill="#e9faf2" filter="url(#grain-1)" opacity="0.15"/>
+  </g>
+  <rect x="46" y="46" width="408" height="408" fill="none" stroke="#203c30" stroke-width="2"/>
+  <g transform="translate(392,392) scale(0.7600)"><rect x="8" y="8" width="84" height="84" rx="14" fill="#f5642b"/><path d="M 62.55 57.22 A 19 19 0 1 1 66.93 46.66 C 76 52 82 62 78 72 C 75.5 78 68 80 62 76" fill="none" stroke="#000d06" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+  <text x="0" y="386" font-family="'Fragment Mono', ui-monospace, 'SFMono-Regular', monospace" font-size="15" letter-spacing="0.03em" fill="#97b2a5">OBRA #1 — Constructiva, Hueso y Tinta</text>
+</g>
+<g transform="translate(420,110)">
+  <g transform="scale(0.7200)">
+  <defs>
+    <clipPath id="frame-clip-2"><rect x="46" y="46" width="408" height="408" rx="2"/></clipPath>
+    <pattern id="hatch-2" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="6" stroke="#e9faf2" stroke-width="0.6"/></pattern>
+  </defs>
+  <rect x="0" y="0" width="500" height="500" fill="#000d06"/>
+  <rect x="28" y="28" width="444" height="444" rx="6" fill="#011c11"/>
+  <g clip-path="url(#frame-clip-2)">
+    <rect x="183.8" y="251.8" width="64.5" height="64.5" fill="#e9faf2" opacity="0.73"/><rect x="253.6" y="185.6" width="60.8" height="60.8" fill="#f5642b" opacity="0.81"/><rect x="251.9" y="319.9" width="64.1" height="64.1" fill="#f5642b" opacity="0.80"/><rect x="183.8" y="319.8" width="64.4" height="64.4" fill="#e9faf2" opacity="0.84"/><rect x="115.2" y="115.2" width="65.6" height="65.6" fill="#c06240" opacity="0.87"/><rect x="49.7" y="389.7" width="60.6" height="60.6" fill="#f5642b" opacity="0.83"/><rect x="252.2" y="252.2" width="63.6" height="63.6" fill="#f5642b" opacity="0.89"/><rect x="116.9" y="48.9" width="62.2" height="62.2" fill="#c06240" opacity="0.93"/><rect x="321.9" y="389.9" width="60.1" height="60.1" fill="#c06240" opacity="0.82"/><rect x="183.6" y="115.6" width="64.8" height="64.8" fill="#e9faf2" opacity="1.00"/>
+    <rect x="46" y="46" width="408" height="408" fill="url(#hatch-2)" opacity="0.22"/>
+  </g>
+  <rect x="46" y="46" width="408" height="408" fill="none" stroke="#203c30" stroke-width="2"/>
+  <g transform="translate(392,392) scale(0.7600)"><rect x="8" y="8" width="84" height="84" rx="14" fill="#f5642b"/><path d="M 62.55 57.22 A 19 19 0 1 1 66.93 46.66 C 76 52 82 62 78 72 C 75.5 78 68 80 62 76" fill="none" stroke="#000d06" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+  <text x="0" y="386" font-family="'Fragment Mono', ui-monospace, 'SFMono-Regular', monospace" font-size="15" letter-spacing="0.03em" fill="#97b2a5">OBRA #2 — Retícula, Vermellón</text>
+</g>
+<g transform="translate(810,110)">
+  <g transform="scale(0.7200)">
+  <defs>
+    <clipPath id="frame-clip-6"><rect x="46" y="46" width="408" height="408" rx="2"/></clipPath>
+    
+  </defs>
+  <rect x="0" y="0" width="500" height="500" fill="#000d06"/>
+  <rect x="28" y="28" width="444" height="444" rx="6" fill="#011c11"/>
+  <g clip-path="url(#frame-clip-6)">
+    <ellipse cx="239.4" cy="236.4" rx="27.2" ry="21.6" fill="none" stroke="#f5642b" stroke-width="1" opacity="0.21" transform="rotate(0.0 239.4 236.4)"/><ellipse cx="238.4" cy="239.3" rx="30.6" ry="17.4" fill="none" stroke="#c06240" stroke-width="1" opacity="0.20" transform="rotate(15.8 238.4 239.3)"/><ellipse cx="261.8" cy="260.5" rx="42.6" ry="35.4" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.19" transform="rotate(26.7 261.8 260.5)"/><ellipse cx="237.9" cy="261.3" rx="41.5" ry="31.6" fill="none" stroke="#f5642b" stroke-width="1" opacity="0.38" transform="rotate(49.7 237.9 261.3)"/><ellipse cx="259.3" cy="260.8" rx="50.5" ry="41.4" fill="none" stroke="#c06240" stroke-width="1" opacity="0.25" transform="rotate(5.1 259.3 260.8)"/><ellipse cx="250.1" cy="252.4" rx="48.1" ry="40.3" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.19" transform="rotate(108.6 250.1 252.4)"/><ellipse cx="248.8" cy="262.3" rx="53.4" ry="44.1" fill="none" stroke="#f5642b" stroke-width="1" opacity="0.39" transform="rotate(63.1 248.8 262.3)"/><ellipse cx="261.2" cy="240.7" rx="58.8" ry="35.5" fill="none" stroke="#c06240" stroke-width="1" opacity="0.30" transform="rotate(107.8 261.2 240.7)"/><ellipse cx="247.4" cy="262.7" rx="63.9" ry="52.4" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.20" transform="rotate(148.2 247.4 262.7)"/><ellipse cx="237.1" cy="245.6" rx="67.7" ry="42.9" fill="none" stroke="#f5642b" stroke-width="1" opacity="0.25" transform="rotate(0.6 237.1 245.6)"/><ellipse cx="244.1" cy="263.6" rx="69.8" ry="43.0" fill="none" stroke="#c06240" stroke-width="1" opacity="0.34" transform="rotate(60.1 244.1 263.6)"/><ellipse cx="251.3" cy="258.8" rx="77.2" ry="55.9" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.21" transform="rotate(93.8 251.3 258.8)"/><ellipse cx="249.1" cy="263.7" rx="81.2" ry="51.3" fill="none" stroke="#f5642b" stroke-width="1" opacity="0.34" transform="rotate(117.7 249.1 263.7)"/><ellipse cx="243.7" cy="244.7" rx="89.5" ry="68.7" fill="none" stroke="#c06240" stroke-width="1" opacity="0.34" transform="rotate(143.8 243.7 244.7)"/><ellipse cx="258.2" cy="245.2" rx="90.6" ry="50.2" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.27" transform="rotate(133.3 258.2 245.2)"/><ellipse cx="240.7" cy="260.3" rx="98.9" ry="78.7" fill="none" stroke="#f5642b" stroke-width="1" opacity="0.23" transform="rotate(134.0 240.7 260.3)"/><ellipse cx="254.0" cy="250.8" rx="103.5" ry="58.8" fill="none" stroke="#c06240" stroke-width="1" opacity="0.27" transform="rotate(121.1 254.0 250.8)"/><ellipse cx="255.3" cy="250.2" rx="107.8" ry="81.0" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.28" transform="rotate(74.4 255.3 250.2)"/><ellipse cx="255.8" cy="263.1" rx="108.9" ry="88.9" fill="none" stroke="#f5642b" stroke-width="1" opacity="0.35" transform="rotate(128.9 255.8 263.1)"/><ellipse cx="259.4" cy="258.9" rx="115.0" ry="86.8" fill="none" stroke="#c06240" stroke-width="1" opacity="0.26" transform="rotate(1.2 259.4 258.9)"/><ellipse cx="251.1" cy="240.0" rx="118.2" ry="88.1" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.37" transform="rotate(170.4 251.1 240.0)"/><ellipse cx="240.4" cy="249.0" rx="118.8" ry="65.9" fill="none" stroke="#f5642b" stroke-width="1" opacity="0.31" transform="rotate(6.2 240.4 249.0)"/><ellipse cx="258.5" cy="255.7" rx="126.2" ry="92.7" fill="none" stroke="#c06240" stroke-width="1" opacity="0.21" transform="rotate(87.9 258.5 255.7)"/><ellipse cx="253.8" cy="237.7" rx="133.3" ry="88.9" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.28" transform="rotate(179.8 253.8 237.7)"/><ellipse cx="255.8" cy="259.1" rx="136.8" ry="114.2" fill="none" stroke="#f5642b" stroke-width="1" opacity="0.29" transform="rotate(69.5 255.8 259.1)"/><ellipse cx="246.2" cy="256.3" rx="142.1" ry="83.6" fill="none" stroke="#c06240" stroke-width="1" opacity="0.32" transform="rotate(56.4 246.2 256.3)"/><ellipse cx="252.4" cy="236.5" rx="147.1" ry="92.0" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.24" transform="rotate(61.3 252.4 236.5)"/><ellipse cx="258.0" cy="260.4" rx="146.0" ry="110.5" fill="none" stroke="#f5642b" stroke-width="1" opacity="0.34" transform="rotate(19.5 258.0 260.4)"/><ellipse cx="240.6" cy="257.0" rx="149.1" ry="106.7" fill="none" stroke="#c06240" stroke-width="1" opacity="0.25" transform="rotate(38.1 240.6 257.0)"/><ellipse cx="237.2" cy="250.3" rx="156.3" ry="100.3" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.19" transform="rotate(143.6 237.2 250.3)"/><ellipse cx="238.6" cy="237.8" rx="159.7" ry="88.9" fill="none" stroke="#f5642b" stroke-width="1" opacity="0.19" transform="rotate(151.8 238.6 237.8)"/><ellipse cx="246.3" cy="247.8" rx="164.0" ry="91.5" fill="none" stroke="#c06240" stroke-width="1" opacity="0.27" transform="rotate(151.5 246.3 247.8)"/><ellipse cx="244.2" cy="247.9" rx="166.1" ry="118.4" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.34" transform="rotate(40.5 244.2 247.9)"/><ellipse cx="244.0" cy="244.8" rx="175.4" ry="134.1" fill="none" stroke="#f5642b" stroke-width="1" opacity="0.20" transform="rotate(121.4 244.0 244.8)"/><ellipse cx="250.6" cy="246.9" rx="176.9" ry="125.5" fill="none" stroke="#c06240" stroke-width="1" opacity="0.39" transform="rotate(127.6 250.6 246.9)"/><ellipse cx="249.6" cy="240.2" rx="181.9" ry="101.6" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.18" transform="rotate(107.4 249.6 240.2)"/><ellipse cx="251.3" cy="254.5" rx="188.9" ry="112.5" fill="none" stroke="#f5642b" stroke-width="1" opacity="0.35" transform="rotate(4.2 251.3 254.5)"/><ellipse cx="254.8" cy="238.5" rx="194.0" ry="139.9" fill="none" stroke="#c06240" stroke-width="1" opacity="0.25" transform="rotate(0.1 254.8 238.5)"/><ellipse cx="246.6" cy="244.9" rx="191.9" ry="160.7" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.39" transform="rotate(42.0 246.6 244.9)"/><ellipse cx="261.1" cy="262.5" rx="198.4" ry="112.7" fill="none" stroke="#f5642b" stroke-width="1" opacity="0.29" transform="rotate(92.7 261.1 262.5)"/>
+    
+  </g>
+  <rect x="46" y="46" width="408" height="408" fill="none" stroke="#203c30" stroke-width="2"/>
+  <g transform="translate(392,392) scale(0.7600)"><rect x="8" y="8" width="84" height="84" rx="14" fill="#f5642b"/><path d="M 62.55 57.22 A 19 19 0 1 1 66.93 46.66 C 76 52 82 62 78 72 C 75.5 78 68 80 62 76" fill="none" stroke="#000d06" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+  <text x="0" y="386" font-family="'Fragment Mono', ui-monospace, 'SFMono-Regular', monospace" font-size="15" letter-spacing="0.03em" fill="#97b2a5">OBRA #6 — Guilloché, Vermellón</text>
+</g>
+<g transform="translate(30,540)">
+  <g transform="scale(0.7200)">
+  <defs>
+    <clipPath id="frame-clip-9"><rect x="46" y="46" width="408" height="408" rx="2"/></clipPath>
+    <pattern id="hatch-9" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="6" stroke="#e9faf2" stroke-width="0.6"/></pattern>
+  </defs>
+  <rect x="0" y="0" width="500" height="500" fill="#000d06"/>
+  <rect x="28" y="28" width="444" height="444" rx="6" fill="#011c11"/>
+  <g clip-path="url(#frame-clip-9)">
+    <path d="M 165.5 170.4 C 285.9 145.0, 364.6 129.4, 399.2 166.1 C 519.3 145.4, 555.2 160.1, 454.0 192.8 C 504.2 208.6, 575.6 188.8, 454.0 163.3" fill="none" stroke="#f5642b" stroke-width="4.8" stroke-linecap="round" opacity="0.73"/><path d="M 94.3 268.4 C 138.8 266.6, 217.3 222.6, 243.9 171.6 C 265.0 96.4, 334.7 29.6, 372.8 46.0 C 458.9 99.5, 521.2 25.9, 454.0 46.0" fill="none" stroke="#c06240" stroke-width="4.0" stroke-linecap="round" opacity="0.93"/><path d="M 49.5 320.3 C 122.6 242.6, 216.3 192.3, 249.5 198.8 C 359.3 227.3, 449.9 287.4, 454.0 300.0 C 508.8 319.8, 607.6 388.1, 454.0 342.7 C 479.5 371.1, 596.9 403.6, 454.0 417.9" fill="none" stroke="#e9faf2" stroke-width="2.7" stroke-linecap="round" opacity="0.73"/><path d="M 160.8 80.7 C 262.4 53.8, 318.9 47.9, 335.5 46.0 C 430.6 -33.4, 456.4 -88.2, 454.0 46.0" fill="none" stroke="#f5642b" stroke-width="2.4" stroke-linecap="round" opacity="0.94"/><path d="M 47.1 260.6 C 101.7 333.4, 152.6 344.4, 177.9 314.6 C 267.9 237.4, 344.3 182.4, 374.0 178.0 C 496.3 100.6, 543.5 114.3, 454.0 67.6 C 501.1 106.3, 619.3 160.1, 454.0 168.7" fill="none" stroke="#c06240" stroke-width="4.0" stroke-linecap="round" opacity="0.69"/><path d="M 91.7 420.0 C 178.2 485.2, 273.5 538.3, 304.4 454.0 C 406.2 415.1, 476.5 354.2, 454.0 338.2 C 538.1 373.9, 567.7 328.8, 454.0 321.1" fill="none" stroke="#e9faf2" stroke-width="4.8" stroke-linecap="round" opacity="0.65"/>
+    <rect x="46" y="46" width="408" height="408" fill="url(#hatch-9)" opacity="0.22"/>
+  </g>
+  <rect x="46" y="46" width="408" height="408" fill="none" stroke="#203c30" stroke-width="2"/>
+  <g transform="translate(392,392) scale(0.7600)"><rect x="8" y="8" width="84" height="84" rx="14" fill="#f5642b"/><path d="M 62.55 57.22 A 19 19 0 1 1 66.93 46.66 C 76 52 82 62 78 72 C 75.5 78 68 80 62 76" fill="none" stroke="#000d06" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+  <text x="0" y="386" font-family="'Fragment Mono', ui-monospace, 'SFMono-Regular', monospace" font-size="15" letter-spacing="0.03em" fill="#97b2a5">OBRA #9 — Trazo, Vermellón</text>
+</g>
+<g transform="translate(420,540)">
+  <g transform="scale(0.7200)">
+  <defs>
+    <clipPath id="frame-clip-12"><rect x="46" y="46" width="408" height="408" rx="2"/></clipPath>
+    
+  </defs>
+  <rect x="0" y="0" width="500" height="500" fill="#000d06"/>
+  <rect x="28" y="28" width="444" height="444" rx="6" fill="#011c11"/>
+  <g clip-path="url(#frame-clip-12)">
+    <rect x="320.5" y="184.5" width="63.0" height="63.0" fill="#438c60" opacity="0.77"/><rect x="320.9" y="116.9" width="62.2" height="62.2" fill="#438c60" opacity="0.74"/><rect x="116.1" y="184.1" width="63.8" height="63.8" fill="#438c60" opacity="0.88"/><rect x="251.4" y="319.4" width="65.2" height="65.2" fill="#57bc80" opacity="0.73"/><rect x="319.4" y="387.4" width="65.3" height="65.3" fill="#438c60" opacity="0.83"/><rect x="253.5" y="253.5" width="61.0" height="61.0" fill="#57bc80" opacity="0.88"/>
+    
+  </g>
+  <rect x="46" y="46" width="408" height="408" fill="none" stroke="#203c30" stroke-width="2"/>
+  <g transform="translate(392,392) scale(0.7600)"><rect x="8" y="8" width="84" height="84" rx="14" fill="#ddb049"/><path d="M 62.55 57.22 A 19 19 0 1 1 66.93 46.66 C 76 52 82 62 78 72 C 75.5 78 68 80 62 76" fill="none" stroke="#000d06" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+  <text x="0" y="386" font-family="'Fragment Mono', ui-monospace, 'SFMono-Regular', monospace" font-size="15" letter-spacing="0.03em" fill="#97b2a5">OBRA #12 — Retícula, Sala Verde</text>
+</g>
+<g transform="translate(810,540)">
+  <g transform="scale(0.7200)">
+  <defs>
+    <clipPath id="frame-clip-35"><rect x="46" y="46" width="408" height="408" rx="2"/></clipPath>
+    <filter id="grain-35"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="35" result="noise"/><feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.5 0"/></filter>
+  </defs>
+  <rect x="0" y="0" width="500" height="500" fill="#000d06"/>
+  <rect x="28" y="28" width="444" height="444" rx="6" fill="#011c11"/>
+  <g clip-path="url(#frame-clip-35)">
+    <ellipse cx="244.7" cy="252.5" rx="30.4" ry="23.6" fill="none" stroke="#57bc80" stroke-width="1" opacity="0.27" transform="rotate(16.9 244.7 252.5)"/><ellipse cx="260.9" cy="263.4" rx="32.7" ry="26.5" fill="none" stroke="#438c60" stroke-width="1" opacity="0.37" transform="rotate(107.2 260.9 263.4)"/><ellipse cx="250.3" cy="251.1" rx="39.3" ry="28.2" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.20" transform="rotate(79.2 250.3 251.1)"/><ellipse cx="245.5" cy="254.6" rx="51.2" ry="39.8" fill="none" stroke="#57bc80" stroke-width="1" opacity="0.25" transform="rotate(17.8 245.5 254.6)"/><ellipse cx="250.8" cy="259.3" rx="57.0" ry="48.1" fill="none" stroke="#438c60" stroke-width="1" opacity="0.24" transform="rotate(119.2 250.8 259.3)"/><ellipse cx="262.4" cy="237.2" rx="57.9" ry="37.0" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.38" transform="rotate(56.9 262.4 237.2)"/><ellipse cx="245.4" cy="261.9" rx="65.7" ry="40.0" fill="none" stroke="#57bc80" stroke-width="1" opacity="0.22" transform="rotate(148.1 245.4 261.9)"/><ellipse cx="236.7" cy="259.6" rx="72.1" ry="46.2" fill="none" stroke="#438c60" stroke-width="1" opacity="0.37" transform="rotate(5.3 236.7 259.6)"/><ellipse cx="248.8" cy="257.4" rx="80.4" ry="53.1" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.25" transform="rotate(106.8 248.8 257.4)"/><ellipse cx="244.6" cy="260.0" rx="83.7" ry="64.1" fill="none" stroke="#57bc80" stroke-width="1" opacity="0.26" transform="rotate(138.2 244.6 260.0)"/><ellipse cx="246.3" cy="249.2" rx="94.6" ry="59.2" fill="none" stroke="#438c60" stroke-width="1" opacity="0.35" transform="rotate(139.9 246.3 249.2)"/><ellipse cx="241.2" cy="239.0" rx="99.1" ry="67.6" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.37" transform="rotate(63.6 241.2 239.0)"/><ellipse cx="259.2" cy="256.3" rx="108.0" ry="59.5" fill="none" stroke="#57bc80" stroke-width="1" opacity="0.23" transform="rotate(29.7 259.2 256.3)"/><ellipse cx="258.0" cy="243.6" rx="113.8" ry="77.2" fill="none" stroke="#438c60" stroke-width="1" opacity="0.38" transform="rotate(109.0 258.0 243.6)"/><ellipse cx="245.7" cy="237.7" rx="119.9" ry="87.8" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.40" transform="rotate(65.8 245.7 237.7)"/><ellipse cx="249.7" cy="238.6" rx="120.9" ry="89.0" fill="none" stroke="#57bc80" stroke-width="1" opacity="0.18" transform="rotate(169.4 249.7 238.6)"/><ellipse cx="238.1" cy="263.5" rx="125.4" ry="71.4" fill="none" stroke="#438c60" stroke-width="1" opacity="0.39" transform="rotate(83.4 238.1 263.5)"/><ellipse cx="259.7" cy="237.2" rx="133.7" ry="96.8" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.34" transform="rotate(108.8 259.7 237.2)"/><ellipse cx="247.0" cy="249.3" rx="143.0" ry="105.0" fill="none" stroke="#57bc80" stroke-width="1" opacity="0.32" transform="rotate(25.0 247.0 249.3)"/><ellipse cx="240.6" cy="242.4" rx="146.7" ry="123.0" fill="none" stroke="#438c60" stroke-width="1" opacity="0.40" transform="rotate(128.5 240.6 242.4)"/><ellipse cx="247.8" cy="236.8" rx="151.0" ry="122.5" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.20" transform="rotate(87.6 247.8 236.8)"/><ellipse cx="240.0" cy="260.0" rx="163.3" ry="91.1" fill="none" stroke="#57bc80" stroke-width="1" opacity="0.22" transform="rotate(9.3 240.0 260.0)"/><ellipse cx="240.5" cy="242.1" rx="169.5" ry="137.3" fill="none" stroke="#438c60" stroke-width="1" opacity="0.28" transform="rotate(19.9 240.5 242.1)"/><ellipse cx="247.3" cy="250.6" rx="172.8" ry="140.0" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.30" transform="rotate(27.7 247.3 250.6)"/><ellipse cx="262.6" cy="249.7" rx="178.9" ry="102.4" fill="none" stroke="#57bc80" stroke-width="1" opacity="0.33" transform="rotate(24.7 262.6 249.7)"/><ellipse cx="241.7" cy="253.3" rx="182.9" ry="111.1" fill="none" stroke="#438c60" stroke-width="1" opacity="0.23" transform="rotate(160.5 241.7 253.3)"/><ellipse cx="259.6" cy="251.5" rx="193.8" ry="138.2" fill="none" stroke="#e9faf2" stroke-width="1" opacity="0.34" transform="rotate(10.4 259.6 251.5)"/><ellipse cx="243.7" cy="236.7" rx="200.7" ry="152.8" fill="none" stroke="#57bc80" stroke-width="1" opacity="0.22" transform="rotate(141.8 243.7 236.7)"/>
+    <rect x="46" y="46" width="408" height="408" fill="#e9faf2" filter="url(#grain-35)" opacity="0.15"/>
+  </g>
+  <rect x="46" y="46" width="408" height="408" fill="none" stroke="#203c30" stroke-width="2"/>
+  <g transform="translate(392,392) scale(0.7600)"><rect x="8" y="8" width="84" height="84" rx="14" fill="#f5642b"/><path d="M 62.55 57.22 A 19 19 0 1 1 66.93 46.66 C 76 52 82 62 78 72 C 75.5 78 68 80 62 76" fill="none" stroke="#000d06" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+  <text x="0" y="386" font-family="'Fragment Mono', ui-monospace, 'SFMono-Regular', monospace" font-size="15" letter-spacing="0.03em" fill="#97b2a5">OBRA #35 — Guilloché, Sala Verde</text>
+</g>
+<g transform="translate(30,970)">
+  <g transform="scale(0.7200)">
+  <defs>
+    <clipPath id="frame-clip-47"><rect x="46" y="46" width="408" height="408" rx="2"/></clipPath>
+    <filter id="grain-47"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="47" result="noise"/><feColorMatrix in="noise" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.5 0"/></filter>
+  </defs>
+  <rect x="0" y="0" width="500" height="500" fill="#000d06"/>
+  <rect x="28" y="28" width="444" height="444" rx="6" fill="#011c11"/>
+  <g clip-path="url(#frame-clip-47)">
+    <path d="M 107.2 377.2 C 213.5 448.6, 300.0 500.1, 337.7 454.0 C 361.7 533.1, 398.3 545.1, 434.9 454.0" fill="none" stroke="#57bc80" stroke-width="2.8" stroke-linecap="round" opacity="0.97"/><path d="M 95.2 88.2 C 206.1 33.4, 282.6 -5.8, 299.5 48.4 C 375.4 29.6, 453.7 94.5, 454.0 106.9 C 575.2 141.6, 605.3 208.1, 454.0 255.8" fill="none" stroke="#438c60" stroke-width="4.0" stroke-linecap="round" opacity="0.91"/><path d="M 78.3 64.7 C 188.9 86.1, 245.3 29.6, 285.2 46.0 C 309.5 78.9, 348.9 48.0, 383.7 46.0 C 504.8 19.0, 595.6 20.1, 454.0 46.0" fill="none" stroke="#e9faf2" stroke-width="4.2" stroke-linecap="round" opacity="0.79"/><path d="M 64.7 307.2 C 104.0 346.1, 223.1 366.8, 240.9 388.2 C 302.2 380.5, 353.1 343.6, 389.3 326.3 C 434.7 385.6, 541.4 385.3, 454.0 418.6 C 546.7 357.2, 571.6 404.0, 454.0 452.0" fill="none" stroke="#57bc80" stroke-width="2.0" stroke-linecap="round" opacity="0.84"/><path d="M 47.1 302.6 C 129.4 350.6, 149.5 423.2, 183.0 422.4 C 294.8 399.0, 412.3 323.7, 423.3 320.3 C 456.0 380.2, 535.4 448.2, 454.0 454.0" fill="none" stroke="#438c60" stroke-width="3.3" stroke-linecap="round" opacity="0.83"/><path d="M 80.8 421.6 C 157.9 402.2, 218.4 413.5, 253.9 378.4 C 302.1 350.4, 343.4 364.3, 362.4 383.2 C 394.1 338.4, 466.8 385.9, 454.0 373.1" fill="none" stroke="#e9faf2" stroke-width="4.1" stroke-linecap="round" opacity="0.92"/><path d="M 109.8 405.3 C 172.7 431.1, 232.9 489.8, 266.2 454.0 C 305.0 485.3, 360.7 496.4, 398.1 454.0 C 496.3 379.6, 585.9 428.3, 454.0 419.8" fill="none" stroke="#57bc80" stroke-width="4.4" stroke-linecap="round" opacity="0.91"/>
+    <rect x="46" y="46" width="408" height="408" fill="#e9faf2" filter="url(#grain-47)" opacity="0.15"/>
+  </g>
+  <rect x="46" y="46" width="408" height="408" fill="none" stroke="#203c30" stroke-width="2"/>
+  <g transform="translate(392,392) scale(0.7600)"><rect x="8" y="8" width="84" height="84" rx="14" fill="#ddb049"/><path d="M 62.55 57.22 A 19 19 0 1 1 66.93 46.66 C 76 52 82 62 78 72 C 75.5 78 68 80 62 76" fill="none" stroke="#000d06" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+  <text x="0" y="386" font-family="'Fragment Mono', ui-monospace, 'SFMono-Regular', monospace" font-size="15" letter-spacing="0.03em" fill="#97b2a5">OBRA #47 — Trazo, Sala Verde</text>
+</g>
+<g transform="translate(420,970)">
+  <g transform="scale(0.7200)">
+  <defs>
+    <clipPath id="frame-clip-77"><rect x="46" y="46" width="408" height="408" rx="2"/></clipPath>
+    <pattern id="hatch-77" width="6" height="6" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y1="0" x2="0" y2="6" stroke="#e9faf2" stroke-width="0.6"/></pattern>
+  </defs>
+  <rect x="0" y="0" width="500" height="500" fill="#000d06"/>
+  <rect x="28" y="28" width="444" height="444" rx="6" fill="#011c11"/>
+  <g clip-path="url(#frame-clip-77)">
+    <circle cx="123.9" cy="156.9" r="99.0" fill="#ddb049" opacity="0.97"/><circle cx="200.9" cy="305.9" r="38.7" fill="#9e7a23" opacity="0.86"/><circle cx="81.8" cy="99.2" r="71.6" fill="none" stroke="#e9faf2" stroke-width="5.2" opacity="0.70"/><circle cx="250" cy="250" r="3" fill="#e9faf2" opacity="0.5"/>
+    <rect x="46" y="46" width="408" height="408" fill="url(#hatch-77)" opacity="0.22"/>
+  </g>
+  <rect x="46" y="46" width="408" height="408" fill="none" stroke="#203c30" stroke-width="2"/>
+  <g transform="translate(392,392) scale(0.7600)"><rect x="8" y="8" width="84" height="84" rx="14" fill="#f5642b"/><path d="M 62.55 57.22 A 19 19 0 1 1 66.93 46.66 C 76 52 82 62 78 72 C 75.5 78 68 80 62 76" fill="none" stroke="#000d06" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+  <text x="0" y="386" font-family="'Fragment Mono', ui-monospace, 'SFMono-Regular', monospace" font-size="15" letter-spacing="0.03em" fill="#97b2a5">OBRA #77 — Orbital, Dorada</text>
+</g>
+<g transform="translate(810,970)">
+  <g transform="scale(0.7200)">
+  <defs>
+    <clipPath id="frame-clip-93"><rect x="46" y="46" width="408" height="408" rx="2"/></clipPath>
+    
+  </defs>
+  <rect x="0" y="0" width="500" height="500" fill="#000d06"/>
+  <rect x="28" y="28" width="444" height="444" rx="6" fill="#011c11"/>
+  <g clip-path="url(#frame-clip-93)">
+    <circle cx="166.2" cy="60.4" r="39.0" fill="#f5642b" opacity="0.63"/><circle cx="177.8" cy="166.3" r="24.3" fill="#c06240" opacity="0.72"/><circle cx="242.2" cy="379.4" r="96.1" fill="none" stroke="#e9faf2" stroke-width="3.8" opacity="0.97"/><circle cx="250" cy="250" r="3" fill="#e9faf2" opacity="0.5"/>
+    
+  </g>
+  <rect x="46" y="46" width="408" height="408" fill="none" stroke="#203c30" stroke-width="2"/>
+  <g transform="translate(392,392) scale(0.7600)"><rect x="8" y="8" width="84" height="84" rx="14" fill="#ddb049"/><path d="M 62.55 57.22 A 19 19 0 1 1 66.93 46.66 C 76 52 82 62 78 72 C 75.5 78 68 80 62 76" fill="none" stroke="#000d06" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+</g>
+  <text x="0" y="386" font-family="'Fragment Mono', ui-monospace, 'SFMono-Regular', monospace" font-size="15" letter-spacing="0.03em" fill="#97b2a5">OBRA #93 — Orbital, Vermellón</text>
+</g>
+</svg>

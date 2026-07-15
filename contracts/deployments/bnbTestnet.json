@@ -1,0 +1,29 @@
+{
+  "network": "bnbTestnet",
+  "chainId": 97,
+  "deployer": "0x8BAD32047Dcb522dA2B3222d8666136E8195B124",
+  "deployedAt": "2026-07-15T14:47:51.793Z",
+  "paymentToken": "0x4f23351272080eA5e14FA7F846E6876A6b5EF78e",
+  "obra": {
+    "address": "0x8D04CBE070430F92E7Ca824c67B688C5B7693077",
+    "txHash": "0x904d0313e0194623c973ff03eece7e8db6095b8a93a1043571c57cde0ee0c2c4",
+    "blockNumber": 119292916,
+    "name": "Obra",
+    "symbol": "OBRA",
+    "maxSupply": "100",
+    "mintPrice": "50000000000000000000",
+    "maxPerWallet": "3",
+    "royaltyReceiver": "0x8BAD32047Dcb522dA2B3222d8666136E8195B124",
+    "royaltyBps": "500",
+    "baseURI": "ipfs://bafybeihtbnfsy5vdonrtr4by6mrvvpcexi5ibnoopxogpqnzbs53vl4wju/",
+    "setBaseURITxHash": "0xef63c06f149d0ca0575dc66f666afb3008a94429f9a9d188feaa42a7b24d3cf0",
+    "imagesIpfsCid": "bafybeicb4f6msted53kj6t4gtg4kle2aeze46t7e2rle2uhwsdh6i2pnjy"
+  },
+  "market": {
+    "address": "0x01422CC3683108D9373b53f0d589F3F34fb27370",
+    "txHash": "0xc584248d1083de69d60e6123b737040e158010beaa4928e2d598e38b42fe0054",
+    "blockNumber": 119292993,
+    "feeBps": "200",
+    "feeRecipient": "0x8BAD32047Dcb522dA2B3222d8666136E8195B124"
+  }
+}

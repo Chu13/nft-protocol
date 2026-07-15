@@ -1,0 +1,60 @@
+{
+  "$schema": "OBRA brand palette — machine-readable companion to /brand/BRAND.md. All oklch values are source of truth; hex values are pre-computed sRGB-gamut-clamped equivalents (via the real OKLab<->linear-sRGB matrices, not approximated) for tooling that doesn't support oklch() (e.g. older Tailwind configs, design tools).",
+  "meta": {
+    "product": "OBRA",
+    "level": 3,
+    "contracts": { "nft": "Obra", "nftSymbol": "OBRA", "marketplace": "ObraMarket" },
+    "paymentToken": { "name": "CHU", "symbol": "CHU", "source": "Level 02 — staking-protocol" },
+    "generated": "2026-07-15",
+    "contrastStandard": "WCAG 2.1 AA (4.5:1 minimum for body text)"
+  },
+  "colors": {
+    "bg":             { "oklch": "oklch(14% 0.030 165)", "hex": "#000d06", "role": "App canvas / base surface — deep viridian-black" },
+    "surface":        { "oklch": "oklch(20% 0.040 165)", "hex": "#011c11", "role": "First elevation step — cards, panels, the NFT plate mat" },
+    "surfaceHigh":    { "oklch": "oklch(26% 0.045 165)", "hex": "#0a2b1e", "role": "Second elevation step — active/featured cards, modals" },
+    "border":         { "oklch": "oklch(33% 0.040 165)", "hex": "#203c30", "role": "Hairline borders (decorative, not a required-to-perceive signal) — also the NFT plate frame line" },
+    "ink":            { "oklch": "oklch(97% 0.020 165)", "hex": "#e9faf2", "role": "Primary text" },
+    "muted":          { "oklch": "oklch(74% 0.035 165)", "hex": "#97b2a5", "role": "Secondary/supporting text" },
+    "primary":        { "oklch": "oklch(68% 0.190 40)",  "hex": "#f5642b", "role": "Vermilion — CTAs, mint/acquire/list actions, pending state, the seal mark" },
+    "primaryDeep":    { "oklch": "oklch(60% 0.130 40)",  "hex": "#c06240", "role": "Primary hover/pressed fill" },
+    "secondary":      { "oklch": "oklch(72% 0.130 155)", "hex": "#57bc80", "role": "Jade — success/confirmed accent, step-2-complete" },
+    "secondaryDeep":  { "oklch": "oklch(58% 0.100 155)", "hex": "#438c60", "role": "Secondary hover/pressed fill" },
+    "error":          { "oklch": "oklch(64% 0.170 10)",  "hex": "#de5774", "role": "Crimson-rose — error/failed/rejected state" },
+    "errorDeep":      { "oklch": "oklch(48% 0.130 10)",  "hex": "#98374d", "role": "Error hover/pressed fill" }
+  },
+  "extendedArtPalette": {
+    "$comment": "Collection-generator-only colors (contracts/art/generate.ts) — not core UI tokens, not used in app chrome. Cover the Paleta trait values that need a color beyond primary/secondary.",
+    "bone":     { "oklch": "oklch(88% 0.020 80)",  "hex": "#ded6c9", "role": "Hueso y Tinta palette trait — warm bone neutral" },
+    "gold":     { "oklch": "oklch(78% 0.130 85)",  "hex": "#ddb049", "role": "Dorada palette trait + Gold Sello variant" },
+    "goldDeep": { "oklch": "oklch(60% 0.110 85)",  "hex": "#9e7a23", "role": "Gold accent shade, used in Espectro palette rotation" }
+  },
+  "verifiedContrast": {
+    "ink/bg": 18.32,
+    "muted/bg": 8.70,
+    "ink/surface": 16.52,
+    "muted/surface": 7.85,
+    "ink/surfaceHigh": 14.10,
+    "muted/surfaceHigh": 6.70,
+    "primary/bg": 6.36,
+    "secondary/bg": 8.40,
+    "error/bg": 5.40,
+    "primaryDeep/bg": 4.77,
+    "secondaryDeep/bg": 4.87,
+    "errorDeep/bg": 2.82,
+    "border/bg": 1.65,
+    "note": "errorDeep fails AA as body text on bg (2.82:1) — errorDeep is fill-only, never used as standalone text/icon color. See BRAND.md 'Text-on-fill pairings' table for the exact approved text color per accent fill. primaryDeep and secondaryDeep pass AA but tightly (4.77 / 4.87) — avoid at small sizes as standalone text."
+  },
+  "textOnFill": {
+    "primary":       { "textColor": "bg", "ratio": 6.36 },
+    "primaryDeep":   { "textColor": "bg", "ratio": 4.77, "note": "Passes AA but tightly — avoid at small sizes, same caution as CHU's own primaryDeep." },
+    "secondary":     { "textColor": "bg", "ratio": 8.40 },
+    "secondaryDeep": { "textColor": "bg", "ratio": 4.87, "note": "Passes AA but tightly — avoid at small sizes." },
+    "error":         { "textColor": "bg", "ratio": 5.40 },
+    "errorDeep":     { "textColor": "ink", "ratio": 6.50 }
+  },
+  "typography": {
+    "display": { "font": "Fraunces", "source": "Google Fonts", "variable": true, "axes": ["wght 300-900", "opsz 9-144", "SOFT", "WONK"], "weights": [500, 600], "note": "Do not enable WONK or high SOFT — keep close to default/formal for the gallery register." },
+    "body":    { "font": "Instrument Sans", "source": "Google Fonts", "variable": true, "weights": [400, 500, 600] },
+    "mono":    { "font": "Fragment Mono", "source": "Google Fonts", "variable": false, "weights": [400], "note": "Regular + italic only, no bold weight — use uppercase + letter-spacing + color for emphasis instead of font-weight." }
+  }
+}

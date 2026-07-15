@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="32" height="32" role="img" aria-label="OBRA">
+  <!--
+    OBRA favicon — simplified seal mark.
+    Rounded-square tab background (bg viridian-black) + a simplified seal (vermilion
+    rounded-square chop + a plain "O" ring, tail flourish dropped) — the full seal in
+    seal.svg/logo.svg keeps its signature tail because there's room for it; at 16-32px the
+    tail would just muddy into noise, so this variant keeps only what survives: the chop
+    outline and the ring. Pure vector, no font dependency — safe at 16-32px.
+  -->
+  <rect x="6" y="6" width="88" height="88" rx="22" fill="#000d06"/>
+  <rect x="24" y="24" width="52" height="52" rx="10" fill="#f5642b"/>
+  <circle cx="50" cy="50" r="13" fill="none" stroke="#000d06" stroke-width="6"/>
+</svg>

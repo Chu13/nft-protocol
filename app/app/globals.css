@@ -1,0 +1,83 @@
+@import "tailwindcss";
+@import "@rainbow-me/rainbowkit/styles.css";
+
+/*
+ * OBRA design tokens, mirroring /brand/BRAND.md and /brand/assets/palette.json
+ * exactly. Tailwind v4 auto-generates utilities such as bg-, text-, border-,
+ * font-, and animate- classes from the color, font, and animate custom
+ * properties declared in the theme block below.
+ */
+@theme {
+  --color-bg: #000d06;
+  --color-surface: #011c11;
+  --color-surface-high: #0a2b1e;
+  --color-border: #203c30;
+  --color-ink: #e9faf2;
+  --color-muted: #97b2a5;
+  --color-primary: #f5642b;
+  --color-primary-deep: #c06240;
+  --color-secondary: #57bc80;
+  --color-secondary-deep: #438c60;
+  --color-error: #de5774;
+  --color-error-deep: #98374d;
+
+  --font-display: var(--font-fraunces), "Fraunces", ui-serif, Georgia, serif;
+  --font-body: var(--font-instrument), "Instrument Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-fragment-mono), "Fragment Mono", ui-monospace, "SFMono-Regular", monospace;
+
+  --animate-pulse-glow: pulse-glow 1.6s ease-in-out infinite;
+  --animate-scale-in: scale-in 0.28s ease-out;
+}
+
+@keyframes pulse-glow {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(245, 100, 43, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(245, 100, 43, 0);
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/*
+ * Motion is reserved for "something is happening" (BRAND.md §6) — never
+ * idle decoration. Neutralize every CSS animation/transition site-wide when
+ * the user has asked for reduced motion, rather than opting in component by
+ * component.
+ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

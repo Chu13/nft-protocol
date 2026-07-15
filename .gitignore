@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Env
+.env
+.env.local
+.env*.local
+!.env.example
+
+# Hardhat
+contracts/artifacts/
+contracts/cache/
+contracts/typechain-types/
+contracts/coverage/
+contracts/coverage.json
+
+# Generated collection art/metadata — deterministically reproducible via
+# `npm run generate-art` / `npm run pin` from traits.json + generate.ts.
+# The canonical copies live on IPFS (see deployments/bnbTestnet.json).
+contracts/art/output/
+
+# Next.js
+app/.next/
+app/out/
+app/build/
+.vercel
+
+# Misc
+.DS_Store
+*.log
+npm-debug.log*

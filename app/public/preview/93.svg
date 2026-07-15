@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img" aria-label="OBRA #93 — Orbital, Vermellón">
+  <defs>
+    <clipPath id="frame-clip-93"><rect x="46" y="46" width="408" height="408" rx="2"/></clipPath>
+    
+  </defs>
+  <rect x="0" y="0" width="500" height="500" fill="#000d06"/>
+  <rect x="28" y="28" width="444" height="444" rx="6" fill="#011c11"/>
+  <g clip-path="url(#frame-clip-93)">
+    <circle cx="166.2" cy="60.4" r="39.0" fill="#f5642b" opacity="0.63"/><circle cx="177.8" cy="166.3" r="24.3" fill="#c06240" opacity="0.72"/><circle cx="242.2" cy="379.4" r="96.1" fill="none" stroke="#e9faf2" stroke-width="3.8" opacity="0.97"/><circle cx="250" cy="250" r="3" fill="#e9faf2" opacity="0.5"/>
+    
+  </g>
+  <rect x="46" y="46" width="408" height="408" fill="none" stroke="#203c30" stroke-width="2"/>
+  <g transform="translate(392,392) scale(0.7600)"><rect x="8" y="8" width="84" height="84" rx="14" fill="#ddb049"/><path d="M 62.55 57.22 A 19 19 0 1 1 66.93 46.66 C 76 52 82 62 78 72 C 75.5 78 68 80 62 76" fill="none" stroke="#000d06" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

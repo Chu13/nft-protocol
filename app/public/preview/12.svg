@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img" aria-label="OBRA #12 — Retícula, Sala Verde">
+  <defs>
+    <clipPath id="frame-clip-12"><rect x="46" y="46" width="408" height="408" rx="2"/></clipPath>
+    
+  </defs>
+  <rect x="0" y="0" width="500" height="500" fill="#000d06"/>
+  <rect x="28" y="28" width="444" height="444" rx="6" fill="#011c11"/>
+  <g clip-path="url(#frame-clip-12)">
+    <rect x="320.5" y="184.5" width="63.0" height="63.0" fill="#438c60" opacity="0.77"/><rect x="320.9" y="116.9" width="62.2" height="62.2" fill="#438c60" opacity="0.74"/><rect x="116.1" y="184.1" width="63.8" height="63.8" fill="#438c60" opacity="0.88"/><rect x="251.4" y="319.4" width="65.2" height="65.2" fill="#57bc80" opacity="0.73"/><rect x="319.4" y="387.4" width="65.3" height="65.3" fill="#438c60" opacity="0.83"/><rect x="253.5" y="253.5" width="61.0" height="61.0" fill="#57bc80" opacity="0.88"/>
+    
+  </g>
+  <rect x="46" y="46" width="408" height="408" fill="none" stroke="#203c30" stroke-width="2"/>
+  <g transform="translate(392,392) scale(0.7600)"><rect x="8" y="8" width="84" height="84" rx="14" fill="#ddb049"/><path d="M 62.55 57.22 A 19 19 0 1 1 66.93 46.66 C 76 52 82 62 78 72 C 75.5 78 68 80 62 76" fill="none" stroke="#000d06" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>

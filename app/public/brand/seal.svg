@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" role="img" aria-label="OBRA seal">
+  <!--
+    OBRA seal — the artist's chop. A vermilion rounded-square stamp enclosing a single
+    continuous stroke that abstracts an "O" with a signature-flourish tail curling off to the
+    lower right. This is the standalone mark: used alone in dense UI chrome, embedded in
+    logo.svg next to the wordmark, simplified (tail dropped) for favicon.svg, and reused
+    unmodified — same path data — by /contracts/art/generate.ts to stamp every generated NFT
+    plate in its lower-right corner. If this file's path data ever changes, update the
+    SEAL_SQUARE / SEAL_RING_TAIL_D constants in generate.ts to match.
+
+    Colors: square fill = primary vermilion (#f5642b, oklch(68% 0.19 40)). Ring+tail stroke =
+    bg near-black viridian (#000d06) — the dark mark reads as a knocked-out/engraved impression
+    in the stamp, and gives the strongest available contrast against the vermilion fill (6.36:1,
+    see BRAND.md §3) rather than a lighter ink-white stroke (2.88:1).
+  -->
+  <rect x="8" y="8" width="84" height="84" rx="14" fill="#f5642b"/>
+  <path
+    d="M 62.55 57.22 A 19 19 0 1 1 66.93 46.66 C 76 52 82 62 78 72 C 75.5 78 68 80 62 76"
+    fill="none"
+    stroke="#000d06"
+    stroke-width="7"
+    stroke-linecap="round"
+    stroke-linejoin="round"/>
+</svg>
