@@ -47,7 +47,7 @@ interface PinataFileResponse {
  * `IpfsHash` is the CID of that directory, so `ipfs://<IpfsHash>/<filename>`
  * resolves each individual file.
  */
-async function pinDirectoryToPinata(dirPath: string, folderName: string): Promise<string> {
+export async function pinDirectoryToPinata(dirPath: string, folderName: string): Promise<string> {
   const files = fs.readdirSync(dirPath).sort((a, b) => {
     const na = Number(a.split(".")[0]);
     const nb = Number(b.split(".")[0]);
