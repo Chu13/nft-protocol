@@ -7,6 +7,7 @@ import { TOKEN_SYMBOL } from "@/lib/config/contracts";
 import { useTokenMetadata } from "@/lib/hooks/useTokenMetadata";
 import { useListing } from "@/lib/hooks/useListings";
 import { formatTokenAmount } from "@/lib/format";
+import { FinishOverlay } from "../marketplace/FinishOverlay";
 import { CancelListingButton } from "../marketplace/CancelListingButton";
 import { ListPanel } from "./ListPanel";
 
@@ -27,6 +28,7 @@ export function ProfileNftCard({ chainId, tokenId, isOwnerViewing, onChanged }: 
   const { metadata } = useTokenMetadata(chainId, tokenId);
   const { listing, refetch: refetchListing } = useListing(chainId, tokenId);
   const [listing_, setListingOpen] = useState(false);
+  const acabado = metadata?.attributes?.find((a) => a.trait_type === "Acabado")?.value;
 
   const isListed = listing?.active === true;
 
@@ -37,8 +39,8 @@ export function ProfileNftCard({ chainId, tokenId, isOwnerViewing, onChanged }: 
   }
 
   return (
-    <div className="flex flex-col overflow-hidden rounded-xl border border-border bg-surface">
-      <Link href={`/marketplace/${tokenId.toString()}`} className="aspect-square w-full overflow-hidden bg-bg">
+    <div className="group flex flex-col overflow-hidden rounded-xl border border-border bg-surface">
+      <Link href={`/marketplace/${tokenId.toString()}`} className="relative aspect-square w-full overflow-hidden bg-bg">
         {metadata?.image && (
           <Image
             src={metadata.image}
@@ -49,6 +51,7 @@ export function ProfileNftCard({ chainId, tokenId, isOwnerViewing, onChanged }: 
             unoptimized
           />
         )}
+        <FinishOverlay acabado={acabado} tokenId={tokenId} />
       </Link>
       <div className="flex flex-col gap-2 p-3">
         <Link href={`/marketplace/${tokenId.toString()}`} className="font-display text-base font-medium text-ink hover:text-primary">

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { TOKEN_SYMBOL } from "@/lib/config/contracts";
 import { useTokenMetadata } from "@/lib/hooks/useTokenMetadata";
 import { formatTokenAmount, truncateAddress } from "@/lib/format";
+import { FinishOverlay } from "./FinishOverlay";
 
 interface NftCardProps {
   chainId: number | undefined;
@@ -22,11 +23,12 @@ interface NftCardProps {
  */
 export function NftCard({ chainId, tokenId, price, seller }: NftCardProps) {
   const { metadata, isLoading } = useTokenMetadata(chainId, tokenId);
+  const acabado = metadata?.attributes?.find((a) => a.trait_type === "Acabado")?.value;
 
   return (
     <div className="group flex flex-col overflow-hidden rounded-xl border border-border bg-surface transition-colors hover:border-primary">
       <Link href={`/marketplace/${tokenId.toString()}`} className="flex flex-col">
-        <div className="aspect-square w-full overflow-hidden bg-bg">
+        <div className="relative aspect-square w-full overflow-hidden bg-bg">
           {metadata?.image ? (
             <Image
               src={metadata.image}
@@ -41,6 +43,7 @@ export function NftCard({ chainId, tokenId, price, seller }: NftCardProps) {
               {isLoading ? "Loading…" : "No image"}
             </div>
           )}
+          <FinishOverlay acabado={acabado} tokenId={tokenId} />
         </div>
         <div className="flex flex-col gap-1.5 p-3 pb-2">
           <span className="font-display text-base font-medium text-ink">
