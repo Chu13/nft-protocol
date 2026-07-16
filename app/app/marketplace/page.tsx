@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useMemo, useState } from "react";
 import { useChainId } from "wagmi";
 import { Header } from "@/components/Header";
@@ -58,8 +59,15 @@ export default function MarketplacePage() {
         ) : isLoading ? (
           <div className="rounded-2xl border border-border bg-surface p-6 text-center font-body text-sm text-muted">Loading listings…</div>
         ) : sorted.length === 0 ? (
-          <div className="rounded-2xl border border-border bg-surface p-6 text-center font-body text-sm text-muted">
-            Nothing listed yet — be the first to list a piece from your profile.
+          <div className="relative overflow-hidden rounded-2xl border border-border bg-surface p-6 text-center font-body text-sm text-muted">
+            <Image
+              src="/preview/47.svg"
+              alt=""
+              fill
+              aria-hidden="true"
+              className="pointer-events-none object-contain opacity-[0.06] grayscale"
+            />
+            <p className="relative">Nothing listed yet — be the first to list a piece from your profile.</p>
           </div>
         ) : (
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">

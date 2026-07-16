@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { use, useMemo } from "react";
 import Link from "next/link";
 import { useAccount, useChainId } from "wagmi";
@@ -98,13 +99,22 @@ export default function ProfilePage({ params }: PageProps) {
             <ProvenanceLedger chainId={chainId} address={profileAddress} />
 
             {allTokenIds.length === 0 ? (
-              <div className="rounded-2xl border border-border bg-surface p-6 text-center font-body text-sm text-muted">
-                No pieces yet.{" "}
-                {isOwnerViewing && (
-                  <Link href="/" className="text-primary hover:underline">
-                    Mint your first Obra
-                  </Link>
-                )}
+              <div className="relative overflow-hidden rounded-2xl border border-border bg-surface p-6 text-center font-body text-sm text-muted">
+                <Image
+                  src="/preview/12.svg"
+                  alt=""
+                  fill
+                  aria-hidden="true"
+                  className="pointer-events-none object-contain opacity-[0.06] grayscale"
+                />
+                <p className="relative">
+                  No pieces yet.{" "}
+                  {isOwnerViewing && (
+                    <Link href="/" className="text-primary hover:underline">
+                      Mint your first Obra
+                    </Link>
+                  )}
+                </p>
               </div>
             ) : (
               <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
