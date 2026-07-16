@@ -102,9 +102,10 @@ export default function NftDetailPage({ params }: PageProps) {
                       key={attr.trait_type}
                       tabIndex={0}
                       className="group rounded-lg border border-border bg-bg px-3 py-2 focus:outline-none"
+                      aria-describedby={note ? noteId : undefined}
                     >
                       <dt className="font-mono text-[0.6875rem] uppercase tracking-[0.05em] text-muted">{attr.trait_type}</dt>
-                      <dd className="font-body text-sm text-ink" aria-describedby={note ? noteId : undefined}>
+                      <dd className="font-body text-sm text-ink">
                         {attr.value}
                       </dd>
                       {note && (
