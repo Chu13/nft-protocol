@@ -14,7 +14,7 @@ interface Level02TeaserProps {
  */
 export function Level02Teaser({ className = "" }: Level02TeaserProps) {
   return (
-    <Card className={className}>
+    <Card className={className} data-testid="level02-teaser">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
           <span className="font-mono text-[0.75rem] uppercase tracking-[0.08em] text-muted">Level 02 · CHU Protocol</span>

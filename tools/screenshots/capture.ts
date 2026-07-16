@@ -177,7 +177,16 @@ async function main(): Promise<void> {
     }
 
     // --- 1. Get CHU ---
-    await shootMain("get-chu.png");
+    // Target the Level02Teaser component specifically (data-testid added in
+    // app/components/ui/Card.tsx + components/Level02Teaser.tsx for exactly
+    // this) rather than the whole `main` region — `main` on the mint page is
+    // dominated visually by the mint panel, and at this point in the flow
+    // (before any approve/mint interaction) a `main`-scoped shot is also
+    // byte-for-byte identical to the very next shot, mint-approve.png.
+    const level02TeaserOutPath = path.join(SCREENSHOT_DIR, "get-chu.png");
+    await page.getByTestId("level02-teaser").screenshot({ path: level02TeaserOutPath });
+    written.push("get-chu.png");
+    console.log("  wrote get-chu.png");
 
     // --- 2/3. Mint — approve, then mint ---
     const approveButton = page.getByRole("button", { name: /Step 1 of 2 — Approve/ });
