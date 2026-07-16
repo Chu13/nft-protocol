@@ -14,6 +14,7 @@ import { useListing } from "@/lib/hooks/useListings";
 import { useTokenMetadata } from "@/lib/hooks/useTokenMetadata";
 import { useSaleHistory } from "@/lib/hooks/useSaleHistory";
 import { formatTokenAmount, truncateAddress } from "@/lib/format";
+import { TRAIT_NOTES } from "@/lib/art/traitNotes";
 
 interface PageProps {
   params: Promise<{ tokenId: string }>;
@@ -93,12 +94,30 @@ export default function NftDetailPage({ params }: PageProps) {
             <Card>
               <h2 className="font-mono text-xs uppercase tracking-[0.08em] text-muted">Attributes</h2>
               <dl className="mt-3 grid grid-cols-2 gap-3">
-                {metadata.attributes.map((attr) => (
-                  <div key={attr.trait_type} className="rounded-lg border border-border bg-bg px-3 py-2">
-                    <dt className="font-mono text-[0.6875rem] uppercase tracking-[0.05em] text-muted">{attr.trait_type}</dt>
-                    <dd className="font-body text-sm text-ink">{attr.value}</dd>
-                  </div>
-                ))}
+                {metadata.attributes.map((attr) => {
+                  const note = TRAIT_NOTES[attr.trait_type];
+                  const noteId = `traitnote-${attr.trait_type}`;
+                  return (
+                    <div
+                      key={attr.trait_type}
+                      tabIndex={0}
+                      className="group rounded-lg border border-border bg-bg px-3 py-2 focus:outline-none"
+                    >
+                      <dt className="font-mono text-[0.6875rem] uppercase tracking-[0.05em] text-muted">{attr.trait_type}</dt>
+                      <dd className="font-body text-sm text-ink" aria-describedby={note ? noteId : undefined}>
+                        {attr.value}
+                      </dd>
+                      {note && (
+                        <p
+                          id={noteId}
+                          className="mt-1 hidden font-body text-xs text-muted group-hover:block group-focus-visible:block"
+                        >
+                          {note}
+                        </p>
+                      )}
+                    </div>
+                  );
+                })}
               </dl>
             </Card>
           )}
