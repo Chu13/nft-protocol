@@ -125,7 +125,15 @@ async function main() {
   console.log("\nNext: call Obra.setBaseURI(baseURI) as the contract owner (a signed transaction — not done by this script).");
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exitCode = 1;
-});
+// Guarded so that `og.ts`'s `await import("./pin")` (done solely to reach the
+// named export `pinDirectoryToPinata`) does not ALSO trigger this script's
+// own full images+metadata generation/pin run as an unrelated module-load
+// side effect. Only run `main()` when this file is executed directly (`npm
+// run pin` / `ts-node art/pin.ts`), matching the Node convention for
+// dual-purpose "library or CLI" modules.
+if (require.main === module) {
+  main().catch((err) => {
+    console.error(err);
+    process.exitCode = 1;
+  });
+}
