@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "capture": "tsx capture.ts"
   },
   "dependencies": {
     "playwright": "^1.48.0",

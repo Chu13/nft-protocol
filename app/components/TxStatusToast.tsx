@@ -81,7 +81,10 @@ export function useTxToast(): ToastContextValue {
 function ToastViewport({ toasts, onDismiss }: { toasts: ToastItem[]; onDismiss: (id: number) => void }) {
   if (toasts.length === 0) return null;
   return (
-    <div className="pointer-events-none fixed inset-x-0 bottom-4 z-50 flex flex-col items-center gap-2 px-4 sm:inset-x-auto sm:right-4 sm:items-end">
+    <div
+      data-testid="toast-viewport"
+      className="pointer-events-none fixed inset-x-0 bottom-4 z-50 flex flex-col items-center gap-2 px-4 sm:inset-x-auto sm:right-4 sm:items-end"
+    >
       {toasts.map((t) => (
         <TxStatusToast key={t.id} phase={t.phase} message={t.message} onDismiss={() => onDismiss(t.id)} />
       ))}

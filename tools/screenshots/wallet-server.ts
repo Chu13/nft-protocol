@@ -17,7 +17,7 @@ export const HARDHAT_ACCOUNTS: Record<0 | 1, { address: `0x${string}`; privateKe
   },
   1: {
     address: "0x70997970C51812dc3A010C7d01b50e0d17dc79C8",
-    privateKey: "0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690",
+    privateKey: "0x59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d",
   },
 };
 
@@ -71,6 +71,21 @@ export async function startWalletHelperServer(accountIndex: 0 | 1, port: number)
   }
 
   const server: Server = createServer((req, res) => {
+    // The page (http://localhost:3000) fetches this helper on a different
+    // origin (http://127.0.0.1:8555) — without CORS headers the browser
+    // blocks the preflight and every wallet-shim call fails silently as a
+    // generic "Failed to fetch", which just hangs RainbowKit's connect
+    // modal forever. Wide-open CORS is fine: this server only ever runs
+    // locally, for screenshot capture, against a throwaway Hardhat node.
+    res.setHeader("Access-Control-Allow-Origin", "*");
+    res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
+    res.setHeader("Access-Control-Allow-Headers", "Content-Type");
+
+    if (req.method === "OPTIONS") {
+      res.writeHead(204).end();
+      return;
+    }
+
     if (req.method !== "POST" || req.url !== "/rpc") {
       res.writeHead(404).end();
       return;
