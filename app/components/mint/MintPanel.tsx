@@ -197,9 +197,11 @@ export function MintPanel({ chainId, onSuccess }: MintPanelProps) {
         </Stat>
       </dl>
 
-      {stats.totalSupply !== undefined && MILESTONE_NOTE[stats.totalSupply.toString()] && (
-        <p className="mt-3 font-mono text-xs text-muted">{MILESTONE_NOTE[stats.totalSupply.toString()]}</p>
-      )}
+      {stats.totalSupply !== undefined &&
+        MILESTONE_NOTE[stats.totalSupply.toString()] &&
+        !(flowMode === "sold-out" && stats.totalSupply.toString() === "100") && (
+          <p className="mt-3 font-mono text-xs text-muted">{MILESTONE_NOTE[stats.totalSupply.toString()]}</p>
+        )}
 
       <div className="mt-6 flex flex-col gap-4 border-t border-border pt-5">
         {flowMode === "not-connected" && (

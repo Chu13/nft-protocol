@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useAccount } from "wagmi";
 import { SealIcon } from "./ui/icons";
 import { NetworkSelector } from "./NetworkSelector";
@@ -28,6 +28,7 @@ const SIGNATURE_WINDOW_MS = 2000;
  */
 export function Header() {
   const pathname = usePathname();
+  const router = useRouter();
   const { address, isConnected } = useAccount();
 
   const profileHref = isConnected && address ? `/profile/${address}` : undefined;
@@ -36,21 +37,21 @@ export function Header() {
   const windowStartRef = useRef(0);
   const [signing, setSigning] = useState(false);
 
-  function handleSealClick(event: React.MouseEvent) {
-    event.preventDefault();
-    event.stopPropagation();
-    if (signing) return;
+  function handleSealClick() {
+    router.push("/");
 
-    const now = Date.now();
-    if (now - windowStartRef.current > SIGNATURE_WINDOW_MS) {
-      windowStartRef.current = now;
-      clickCountRef.current = 0;
-    }
-    clickCountRef.current += 1;
+    if (!signing) {
+      const now = Date.now();
+      if (now - windowStartRef.current > SIGNATURE_WINDOW_MS) {
+        windowStartRef.current = now;
+        clickCountRef.current = 0;
+      }
+      clickCountRef.current += 1;
 
-    if (clickCountRef.current >= SIGNATURE_CLICK_THRESHOLD) {
-      clickCountRef.current = 0;
-      setSigning(true);
+      if (clickCountRef.current >= SIGNATURE_CLICK_THRESHOLD) {
+        clickCountRef.current = 0;
+        setSigning(true);
+      }
     }
   }
 
