@@ -69,7 +69,7 @@ export default function NftDetailPage({ params }: PageProps) {
               />
             ) : (
               <div className="flex h-full w-full items-center justify-center font-mono text-xs text-muted">
-                {metadataLoading ? "Loading…" : "No image"}
+                {metadataLoading ? "Reading provenance…" : "No image"}
               </div>
             )}
           </div>
@@ -138,21 +138,27 @@ export default function NftDetailPage({ params }: PageProps) {
             )}
           </Card>
 
-          {history && history.length > 0 && (
+          {history && (
             <Card>
               <h2 className="font-mono text-xs uppercase tracking-[0.08em] text-muted">Price History</h2>
-              <ul className="mt-3 flex flex-col gap-2">
-                {history.map((sale) => (
-                  <li key={sale.txHash} className="flex items-center justify-between font-mono text-xs text-muted">
-                    <span>
-                      {truncateAddress(sale.seller)} → {truncateAddress(sale.buyer)}
-                    </span>
-                    <span className="text-ink">
-                      {formatTokenAmount(sale.price)} {TOKEN_SYMBOL}
-                    </span>
-                  </li>
-                ))}
-              </ul>
+              {history.length > 0 ? (
+                <ul className="mt-3 flex flex-col gap-2">
+                  {history.map((sale) => (
+                    <li key={sale.txHash} className="flex items-center justify-between font-mono text-xs text-muted">
+                      <span>
+                        {truncateAddress(sale.seller)} → {truncateAddress(sale.buyer)}
+                      </span>
+                      <span className="text-ink">
+                        {formatTokenAmount(sale.price)} {TOKEN_SYMBOL}
+                      </span>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="mt-3 font-body text-sm text-muted">
+                  No transactions recorded for this piece yet — it has only ever been minted.
+                </p>
+              )}
             </Card>
           )}
         </div>

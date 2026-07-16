@@ -204,7 +204,9 @@ export function MintPanel({ chainId, onSuccess }: MintPanelProps) {
           </p>
         )}
 
-        {flowMode === "sold-out" && <p className="font-body text-sm text-muted">The collection is fully minted.</p>}
+        {flowMode === "sold-out" && (
+          <p className="font-body text-sm text-muted">The collection is complete. All 100 pieces are signed.</p>
+        )}
 
         {flowMode === "wallet-limit" && (
           <p className="font-body text-sm text-muted">
