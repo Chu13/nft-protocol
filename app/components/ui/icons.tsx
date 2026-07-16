@@ -190,3 +190,25 @@ export function SortIcon(props: IconProps) {
     </svg>
   );
 }
+
+/** Speaker with sound waves — the footer sound toggle's "on" state. */
+export function SpeakerIcon(props: IconProps) {
+  return (
+    <svg {...base} width={16} height={16} {...props}>
+      <path d="M4 9v6h4l5 4V5L8 9H4Z" />
+      <path d="M17 8.5a5 5 0 0 1 0 7" />
+      <path d="M19.5 6a8.5 8.5 0 0 1 0 12" />
+    </svg>
+  );
+}
+
+/** Speaker with an X — the footer sound toggle's "off" (default) state. */
+export function SpeakerMuteIcon(props: IconProps) {
+  return (
+    <svg {...base} width={16} height={16} {...props}>
+      <path d="M4 9v6h4l5 4V5L8 9H4Z" />
+      <path d="M17 9.5 21.5 14" />
+      <path d="M21.5 9.5 17 14" />
+    </svg>
+  );
+}

@@ -1,3 +1,5 @@
+import { SoundToggle } from "./SoundToggle";
+
 /**
  * Shared footer for every route. Carries BRAND.md §1's storytelling "brand
  * line" ("Signed by Chu. Paid in CHU.") with "Built by Chu" as a discreet,
@@ -8,17 +10,20 @@
  */
 export function Footer() {
   return (
-    <footer className="border-t border-border px-4 py-6 text-center font-mono text-xs text-muted sm:px-6">
-      Signed by Chu. Paid in CHU. — OBRA ·{" "}
-      <a
-        href="https://jabordones.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="jabordones.com — Jesus Bordones' portfolio"
-        className="text-muted underline decoration-border underline-offset-2 transition-colors hover:text-ink hover:decoration-muted"
-      >
-        Built by Chu
-      </a>
+    <footer className="flex flex-col items-center gap-3 border-t border-border px-4 py-6 text-center font-mono text-xs text-muted sm:flex-row sm:justify-between sm:px-6">
+      <span>
+        Signed by Chu. Paid in CHU. — OBRA ·{" "}
+        <a
+          href="https://jabordones.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="jabordones.com — Jesus Bordones' portfolio"
+          className="text-muted underline decoration-border underline-offset-2 transition-colors hover:text-ink hover:decoration-muted"
+        >
+          Built by Chu
+        </a>
+      </span>
+      <SoundToggle />
     </footer>
   );
 }

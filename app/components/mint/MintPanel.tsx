@@ -8,6 +8,7 @@ import { useApproveChu, useChuAllowance, useMint } from "@/lib/hooks/useObraActi
 import { getAllowlistProof, isAllowlisted } from "@/lib/allowlist";
 import { formatTokenAmount, getTxErrorMessage } from "@/lib/format";
 import { generateTraits, selloTier, type SelloTier } from "@/lib/art/traits";
+import { isSoundEnabled, playStampSound } from "@/lib/sound";
 import { useTxToast } from "../TxStatusToast";
 import { StepIndicator } from "../StepIndicator";
 import { Button } from "../ui/Button";
@@ -159,6 +160,7 @@ export function MintPanel({ chainId, onSuccess }: MintPanelProps) {
           : [];
       const tier = mintedTokenIds.length > 0 ? bestSelloTier(mintedTokenIds) : "vermilion";
       notify("confirmed", `Confirmed — ${label} minted.`, { icon: mintConfirmIcon(tier) });
+      if (isSoundEnabled()) playStampSound();
       approveTx.reset();
       mintTx.reset();
       setQuantity(1);
