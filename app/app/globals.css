@@ -27,6 +27,7 @@
 
   --animate-pulse-glow: pulse-glow 1.6s ease-in-out infinite;
   --animate-scale-in: scale-in 0.28s ease-out;
+  --animate-stamp: stamp 0.18s ease-out;
 }
 
 @keyframes pulse-glow {
@@ -47,6 +48,18 @@
   100% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+@keyframes stamp {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.92);
+  }
+  100% {
+    transform: scale(1);
   }
 }
 

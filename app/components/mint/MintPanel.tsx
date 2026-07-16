@@ -7,6 +7,7 @@ import { Phase, phaseLabel, useCollectionStats } from "@/lib/hooks/useCollection
 import { useApproveChu, useChuAllowance, useMint } from "@/lib/hooks/useObraActions";
 import { getAllowlistProof, isAllowlisted } from "@/lib/allowlist";
 import { formatTokenAmount, getTxErrorMessage } from "@/lib/format";
+import { generateTraits, selloTier, type SelloTier } from "@/lib/art/traits";
 import { useTxToast } from "../TxStatusToast";
 import { StepIndicator } from "../StepIndicator";
 import { Button } from "../ui/Button";
@@ -16,6 +17,34 @@ import { KeyIcon, SealIcon } from "../ui/icons";
 interface MintPanelProps {
   chainId: number | undefined;
   onSuccess: () => void;
+}
+
+const GOLD_HEX = "#ddb049"; // contracts/art/generate.ts's COLOR.gold — the collection's own gold, not an unrelated hue.
+
+/** Best tier across a batch of newly minted tokenIds — Double > Gold > vermilion. */
+function bestSelloTier(mintedTokenIds: bigint[]): SelloTier {
+  const tiers = mintedTokenIds.map((id) => selloTier(generateTraits(Number(id))["Sello"]));
+  if (tiers.includes("double")) return "double";
+  if (tiers.includes("gold")) return "gold";
+  return "vermilion";
+}
+
+/** The mint-confirmed toast icon — a stamp-press animation, recolored (and
+ * doubled) when the newly minted piece(s) include a rare Sello. No copy
+ * change, no celebratory decoration — just the real trait rendered honestly. */
+function mintConfirmIcon(tier: SelloTier) {
+  if (tier === "double") {
+    return (
+      <span className="relative inline-block h-4 w-4">
+        <SealIcon className="absolute inset-0 h-4 w-4 animate-stamp text-primary" />
+        <SealIcon className="absolute inset-0 h-4 w-4 translate-x-1 translate-y-1 animate-stamp" style={{ color: GOLD_HEX }} />
+      </span>
+    );
+  }
+  if (tier === "gold") {
+    return <SealIcon className="h-4 w-4 animate-stamp" style={{ color: GOLD_HEX }} />;
+  }
+  return <SealIcon className="h-4 w-4 animate-stamp text-secondary" />;
 }
 
 /**
@@ -118,7 +147,12 @@ export function MintPanel({ chainId, onSuccess }: MintPanelProps) {
             ? `Obra #${newTotal.toString()}`
             : `Obra #${(newTotal - BigInt(quantity) + 1n).toString()}–${newTotal.toString()}`
           : `${quantity} piece${quantity > 1 ? "s" : ""}`;
-      notify("confirmed", `Confirmed — ${label} minted.`);
+      const mintedTokenIds =
+        newTotal !== undefined
+          ? Array.from({ length: quantity }, (_, i) => newTotal - BigInt(quantity) + 1n + BigInt(i))
+          : [];
+      const tier = mintedTokenIds.length > 0 ? bestSelloTier(mintedTokenIds) : "vermilion";
+      notify("confirmed", `Confirmed — ${label} minted.`, { icon: mintConfirmIcon(tier) });
       approveTx.reset();
       mintTx.reset();
       setQuantity(1);

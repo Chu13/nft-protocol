@@ -5,15 +5,23 @@ import { AlertTriangleIcon, CheckIcon, SpinnerIcon } from "./ui/icons";
 
 export type TxToastPhase = "pending" | "confirmed" | "error";
 
+interface NotifyOptions {
+  /** Overrides the phase's default icon — used by the mint flow to render
+   * the seal-stamp treatment (and its rarity styling) instead of the
+   * generic confirmed checkmark. Omit for the default icon. */
+  icon?: ReactNode;
+}
+
 interface ToastItem {
   id: number;
   phase: TxToastPhase;
   message: string;
+  icon?: ReactNode;
 }
 
 interface ToastContextValue {
   /** Push a transaction status toast. Returns the toast id (for manual dismissal, e.g. pending -> confirmed replace). */
-  notify: (phase: TxToastPhase, message: string) => number;
+  notify: (phase: TxToastPhase, message: string, options?: NotifyOptions) => number;
   dismiss: (id: number) => void;
 }
 
@@ -44,9 +52,9 @@ export function ToastProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const notify = useCallback(
-    (phase: TxToastPhase, message: string) => {
+    (phase: TxToastPhase, message: string, options?: NotifyOptions) => {
       const id = ++idCounter;
-      setToasts((prev) => [...prev, { id, phase, message }]);
+      setToasts((prev) => [...prev, { id, phase, message, icon: options?.icon }]);
       const duration = AUTO_DISMISS_MS[phase];
       if (duration) {
         const timer = setTimeout(() => dismiss(id), duration);
@@ -86,7 +94,7 @@ function ToastViewport({ toasts, onDismiss }: { toasts: ToastItem[]; onDismiss: 
       className="pointer-events-none fixed inset-x-0 bottom-4 z-50 flex flex-col items-center gap-2 px-4 sm:inset-x-auto sm:right-4 sm:items-end"
     >
       {toasts.map((t) => (
-        <TxStatusToast key={t.id} phase={t.phase} message={t.message} onDismiss={() => onDismiss(t.id)} />
+        <TxStatusToast key={t.id} phase={t.phase} message={t.message} icon={t.icon} onDismiss={() => onDismiss(t.id)} />
       ))}
     </div>
   );
@@ -101,6 +109,7 @@ const PHASE_BORDER: Record<TxToastPhase, string> = {
 interface TxStatusToastProps {
   phase: TxToastPhase;
   message: string;
+  icon?: ReactNode;
   onDismiss?: () => void;
 }
 
@@ -110,7 +119,7 @@ interface TxStatusToastProps {
  * with a plain-language message. No box-shadow (flat-surface rule); the
  * confirmed state gets one quiet scale-in, never a celebratory motion.
  */
-export function TxStatusToast({ phase, message, onDismiss }: TxStatusToastProps) {
+export function TxStatusToast({ phase, message, icon, onDismiss }: TxStatusToastProps) {
   return (
     <div
       role={phase === "error" ? "alert" : "status"}
@@ -121,9 +130,13 @@ export function TxStatusToast({ phase, message, onDismiss }: TxStatusToastProps)
       ].join(" ")}
     >
       <span className="mt-0.5 shrink-0">
-        {phase === "pending" && <SpinnerIcon className="h-4 w-4 animate-spin text-primary" />}
-        {phase === "confirmed" && <CheckIcon className="h-4 w-4 text-secondary" />}
-        {phase === "error" && <AlertTriangleIcon className="h-4 w-4 text-error" />}
+        {icon
+          ? icon
+          : phase === "pending"
+            ? <SpinnerIcon className="h-4 w-4 animate-spin text-primary" />
+            : phase === "confirmed"
+              ? <CheckIcon className="h-4 w-4 text-secondary" />
+              : <AlertTriangleIcon className="h-4 w-4 text-error" />}
       </span>
       <p className="font-body text-sm leading-snug text-ink">{message}</p>
       {onDismiss && (
