@@ -1,14 +1,20 @@
 import { TOKEN_SYMBOL } from "@/lib/config/contracts";
 import { formatTokenAmount } from "@/lib/format";
+import { generateTraits, selloTier } from "@/lib/art/traits";
 import { Card } from "../ui/Card";
+
+const TOTAL_COMPOSICION_VALUES = 5;
 
 interface ProfileStatsProps {
   totalOwned: number;
   totalSpentOnMints: bigint | undefined;
   totalListedValue: bigint;
+  tokenIds: bigint[];
 }
 
-export function ProfileStats({ totalOwned, totalSpentOnMints, totalListedValue }: ProfileStatsProps) {
+export function ProfileStats({ totalOwned, totalSpentOnMints, totalListedValue, tokenIds }: ProfileStatsProps) {
+  const traitSummary = tokenIds.length > 0 ? buildTraitSummary(tokenIds) : undefined;
+
   return (
     <Card>
       <dl className="grid grid-cols-3 gap-4">
@@ -20,8 +26,24 @@ export function ProfileStats({ totalOwned, totalSpentOnMints, totalListedValue }
           {totalListedValue > 0n ? `${formatTokenAmount(totalListedValue)} ${TOKEN_SYMBOL}` : "—"}
         </Stat>
       </dl>
+
+      {traitSummary && <p className="mt-4 border-t border-border pt-4 font-mono text-xs text-muted">{traitSummary}</p>}
     </Card>
   );
+}
+
+function buildTraitSummary(tokenIds: bigint[]): string {
+  const traitsByToken = tokenIds.map((id) => generateTraits(Number(id)));
+
+  const distinctComposiciones = new Set(traitsByToken.map((t) => t["Composición"]));
+  const clauses = [`${distinctComposiciones.size} of ${TOTAL_COMPOSICION_VALUES} Composición values`];
+
+  const hasGold = traitsByToken.some((t) => selloTier(t.Sello) === "gold");
+  const hasDouble = traitsByToken.some((t) => selloTier(t.Sello) === "double");
+  if (hasGold) clauses.push("includes 1 Gold Sello");
+  if (hasDouble) clauses.push("includes 1 Double Sello");
+
+  return clauses.join(" · ");
 }
 
 function Stat({ label, children }: { label: string; children: React.ReactNode }) {

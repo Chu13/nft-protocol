@@ -88,7 +88,12 @@ export default function ProfilePage({ params }: PageProps) {
           </div>
         ) : (
           <>
-            <ProfileStats totalOwned={allTokenIds.length} totalSpentOnMints={mintSpend} totalListedValue={totalListedValue} />
+            <ProfileStats
+              totalOwned={allTokenIds.length}
+              totalSpentOnMints={mintSpend}
+              totalListedValue={totalListedValue}
+              tokenIds={allTokenIds}
+            />
 
             <ProvenanceLedger chainId={chainId} address={profileAddress} />
 
