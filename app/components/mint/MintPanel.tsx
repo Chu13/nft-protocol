@@ -310,7 +310,11 @@ function QuantityStepper({
         >
           −
         </button>
-        <span className="min-w-8 text-center font-mono text-sm text-ink">{quantity}</span>
+        <span className="h-5 min-w-8 overflow-hidden text-center">
+          <span key={quantity} className="block animate-digit-roll font-mono text-sm text-ink">
+            {quantity}
+          </span>
+        </span>
         <button
           type="button"
           disabled={disabled || (maxNum !== undefined && quantity >= maxNum)}

@@ -28,6 +28,7 @@
   --animate-pulse-glow: pulse-glow 1.6s ease-in-out infinite;
   --animate-scale-in: scale-in 0.28s ease-out;
   --animate-stamp: stamp 0.18s ease-out;
+  --animate-digit-roll: digit-roll 0.12s ease-out;
 }
 
 @keyframes pulse-glow {
@@ -60,6 +61,17 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes digit-roll {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
