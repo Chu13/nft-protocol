@@ -10,6 +10,7 @@ import { Level02Teaser } from "@/components/Level02Teaser";
 import { ProfileHeader } from "@/components/profile/ProfileHeader";
 import { ProfileStats } from "@/components/profile/ProfileStats";
 import { ProfileNftCard } from "@/components/profile/ProfileNftCard";
+import { ProvenanceLedger } from "@/components/profile/ProvenanceLedger";
 import { useOwnedTokenIds } from "@/lib/hooks/useOwnedTokens";
 import { useListings } from "@/lib/hooks/useListings";
 import { useMintSpend } from "@/lib/hooks/useMintSpend";
@@ -88,6 +89,8 @@ export default function ProfilePage({ params }: PageProps) {
         ) : (
           <>
             <ProfileStats totalOwned={allTokenIds.length} totalSpentOnMints={mintSpend} totalListedValue={totalListedValue} />
+
+            <ProvenanceLedger chainId={chainId} address={profileAddress} />
 
             {allTokenIds.length === 0 ? (
               <div className="rounded-2xl border border-border bg-surface p-6 text-center font-body text-sm text-muted">
