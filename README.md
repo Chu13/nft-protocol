@@ -17,12 +17,11 @@ No backend anywhere — the contracts are the source of truth for state, and NFT
 
 ## Screenshots
 
-<!-- TODO: add screenshots/GIF of the mint page, marketplace, and a profile page.
-     The app is live and fully working (see Deployed contracts below) — screenshots
-     were verified visually during development but not yet committed as image files.
-     Capture at localhost:3000 (or the Vercel demo) showing: the mint panel with the
-     Public-phase stats, the marketplace grid with a real listing, and a profile page
-     with an owned + listed piece. -->
+| Mint | Marketplace | Profile |
+|---|---|---|
+| [![Mint page](docs/screenshots/mint.png)](docs/screenshots/mint.png) | [![Marketplace page](docs/screenshots/marketplace.png)](docs/screenshots/marketplace.png) | [![Profile page](docs/screenshots/profile.png)](docs/screenshots/profile.png) |
+
+Captured live from the deployed demo — Public-phase mint stats, a real marketplace listing, and a collector profile with an owned + listed piece.
 
 ## Ecosystem context
 
