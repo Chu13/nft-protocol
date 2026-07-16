@@ -27,6 +27,7 @@
 
   --animate-pulse-glow: pulse-glow 1.6s ease-in-out infinite;
   --animate-scale-in: scale-in 0.28s ease-out;
+  --animate-sign: sign 0.7s ease-out forwards;
   --animate-stamp: stamp 0.18s ease-out;
   --animate-digit-roll: digit-roll 0.12s ease-out;
 }
@@ -49,6 +50,15 @@
   100% {
     transform: scale(1);
     opacity: 1;
+  }
+}
+
+@keyframes sign {
+  0% {
+    stroke-dashoffset: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
   }
 }
 
