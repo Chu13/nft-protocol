@@ -21,6 +21,12 @@ interface MintPanelProps {
 
 const GOLD_HEX = "#ddb049"; // contracts/art/generate.ts's COLOR.gold — the collection's own gold, not an unrelated hue.
 
+const MILESTONE_NOTE: Record<string, string> = {
+  "1": "The first piece is signed.",
+  "50": "Obra #50 — halfway signed.",
+  "100": "The collection is complete.",
+};
+
 /** Best tier across a batch of newly minted tokenIds — Double > Gold > vermilion. */
 function bestSelloTier(mintedTokenIds: bigint[]): SelloTier {
   const tiers = mintedTokenIds.map((id) => selloTier(generateTraits(Number(id))["Sello"]));
@@ -188,6 +194,10 @@ export function MintPanel({ chainId, onSuccess }: MintPanelProps) {
           {!isConnected ? "—" : isAllowlisted(address) ? "You're on it" : "Not on it"}
         </Stat>
       </dl>
+
+      {stats.totalSupply !== undefined && MILESTONE_NOTE[stats.totalSupply.toString()] && (
+        <p className="mt-3 font-mono text-xs text-muted">{MILESTONE_NOTE[stats.totalSupply.toString()]}</p>
+      )}
 
       <div className="mt-6 flex flex-col gap-4 border-t border-border pt-5">
         {flowMode === "not-connected" && (
