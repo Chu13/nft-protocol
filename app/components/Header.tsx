@@ -46,6 +46,9 @@ export function Header() {
           <NavLink href="/marketplace" active={pathname?.startsWith("/marketplace") ?? false}>
             Marketplace
           </NavLink>
+          <NavLink href="/how-it-works" active={pathname === "/how-it-works"}>
+            How it works
+          </NavLink>
           {profileHref && (
             <NavLink href={profileHref} active={pathname?.startsWith("/profile") ?? false}>
               My Pieces
